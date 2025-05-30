@@ -1,0 +1,46 @@
+.card.blog-card {
+    position: relative;
+    border: none;
+    box-shadow: -5px 5px 0px black;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+}
+.blogHeader{
+        color: rgb(255, 255, 255);
+        position: relative;
+        background-color: black;
+        z-index: 1;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.blogHeader::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(img2.avif) center/cover no-repeat;
+    filter: brightness(0.3);
+    z-index: 0;
+} 
+.blogHeader h1, .blogHeader p {
+    position: relative;
+    z-index: 99;
+}
+.blogHeader h1{
+        font-weight: 700;
+}
+.card-title{
+        text-transform: capitalize;
+}
+.card-subtitle{
+        color: white !important;
+        text-transform: capitalize;
+}
+.card-text {
+    text-transform: capitalize;
+}
+
